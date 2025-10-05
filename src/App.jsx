@@ -22,6 +22,7 @@ const handleClick = (key) => {
   else if(key === "="){
    if(!expr){
      setAns("Error");
+     return;
   }
 
    const res = simpleEvaluate(expr);
